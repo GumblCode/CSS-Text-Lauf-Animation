@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Ink Free";
+	src: local("Ink Free"), url(./font/Inkfree.ttf);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	background: linear-gradient(195deg, #0e0af7, #ee0808);
+}
+
+.container {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+
+.area1 {
+	position: absolute;
+	display: block;
+	margin: auto auto;
+	white-space: hidden;
+	overflow: hidden;
+	min-width: 100%;
+	height: 100%;
+}
+
+.area1 span {
+	display: inline-block;
+	font-family: Ink Free;
+	font-weight: 900;
+	color: azure;
+	text-align: center;
+	min-width: 100%;
+	height: 100%;
+	line-height: 140px;
+	font-size: 6rem;
+	animation: area1 10s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes area1 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
